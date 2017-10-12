@@ -1,4 +1,4 @@
-package format
+package template
 
 import (
 	"testing"
@@ -27,4 +27,8 @@ func TestNextMonday(t *testing.T) {
 			t.Error("should be:", c.excepted, "when", c.input, "but get:", result)
 		}
 	}
+}
+
+func TestBulletJournal(t *testing.T) {
+	NextWeekBulletJournal()
 }
