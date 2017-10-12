@@ -3,10 +3,13 @@ package main
 import (
 	"fmt"
 	"time"
+
+	"github.com/nyogjtrc/note-format/template"
 )
 
 func main() {
 	formatWorkLog()
+	template.NextWeekBulletJournal()
 }
 
 func formatWorkLog() {
